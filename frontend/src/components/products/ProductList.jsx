@@ -592,7 +592,7 @@ const ProductList = () => {
                 <select
                   value={filters.sort}
                   onChange={(e) => handleFilterChange('sort', e.target.value)}
-                  className="appearance-none w-auto px-4 py-1 pr-10 border border-gray-300 rounded-3xl text-body2"
+                  className="appearance-none w-auto px-4 py-1 pr-10 border border-gray-300 rounded-3xl text-body2 bg-white"
                 >
                   <option value="">Newest</option>
                   <option value="price_asc">Price: Low to High</option>
@@ -647,11 +647,6 @@ const ProductList = () => {
             </div>
           ) : (
             <>
-              {/* <div className="flex flex-wrap gap-4 items-center justify-center">
-                {products.map((product) => (
-                  <ProductCard key={product._id} product={product} />
-                ))}
-              </div> */}
 
               <div className="grid grid-cols-2 min-[500px]:grid-cols-3 xl:grid-cols-4 gap-4 items-start justify-items-center">
                 {products.map((product) => (
@@ -741,7 +736,7 @@ const ProductList = () => {
             onClick={() => setShowMobileFilters(false)}
           />
           {/* Filter Panel */}
-          <div className="absolute inset-y-0 left-0 w-full sm:w-96 bg-white shadow-xl flex flex-col">
+          <div className="absolute inset-y-0 left-0 w-full sm:w-96 bg-white flex flex-col">
             <div className="sticky top-3 bg-white px-6 py-4 flex items-center justify-between z-10">
               <h2 className="text-heading2 font-display ">Filters</h2>
               <button

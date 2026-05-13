@@ -25,41 +25,6 @@ export const getImageUrl = (imagePath) => {
   return `${baseUrl}/${cleanPath}`;
 };
 
-// export const getImageUrl = (imagePath) => {
-//   if (!imagePath) return null;
-
-//   const cleanPath = imagePath.startsWith("/")
-//     ? imagePath.slice(1)
-//     : imagePath;
-
-//   const baseUrl = import.meta.env.VITE_API_URL?.replace(/\/api$/, "");
-
-//   return `${baseUrl}/${cleanPath}`;
-// };
-
-// export const getImageUrl = (imagePath) => {
-//   if (!imagePath) return null;
-
-//   const baseUrl = import.meta.env.VITE_API_URL;
-
-//   return `${baseUrl}/${imagePath.replace(/^\/+/, "")}`;
-// };
-
-// export const getImageUrl = (imagePath) => {
-//   if (!imagePath) return null;
-
-//   let cleanPath = imagePath.replace(/^\/+/, "");
-
-//   // FIX OLD DB FORMAT
-//   if (cleanPath.startsWith("imgs/") && !cleanPath.startsWith("imgs/products/") && !cleanPath.startsWith("imgs/notes/")) {
-//     cleanPath = cleanPath.replace("imgs/", "imgs/products/");
-//   }
-
-//   const baseUrl = import.meta.env.VITE_API_URL;
-
-//   return `${baseUrl}/${cleanPath}`;
-// };
-
 // Generate an inline SVG data URI placeholder (works offline and avoids external calls)
 export const placeholderDataUri = (width = 400, height = 400, text = 'Perfume') => {
   const svg = `<svg xmlns='http://www.w3.org/2000/svg' width='${width}' height='${height}' viewBox='0 0 ${width} ${height}'><rect width='100%' height='100%' fill='%23f3f4f6'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Arial, Helvetica, sans-serif' font-size='20' fill='%239ca3af'>${text}</text></svg>`;

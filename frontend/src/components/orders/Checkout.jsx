@@ -293,11 +293,6 @@ const Checkout = () => {
     return null;
   }
 
-  // const steps = [
-  //   { number: 1, title: 'Shipping Address' },
-  //   { number: 2, title: 'Coupon Code' },
-  //   { number: 3, title: 'Payment Details' },
-  // ];
 
   const steps = [
     { number: 1, title: 'Shipping Information' },
@@ -310,7 +305,7 @@ const Checkout = () => {
       {/* Payment Processing Overlay */}
       {(paymentProcessing || paymentSuccess) && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-          <div className="bg-white rounded-lg shadow-xl p-8 max-w-md w-full mx-4">
+          <div className="bg-white rounded-lg p-8 max-w-md w-full mx-4">
             {paymentProcessing && (
               <div className="text-center">
                 <div className="animate-spin rounded-full h-16 w-16 border-b-2 border-gray-700 mx-auto mb-4"></div>
@@ -609,7 +604,7 @@ const Checkout = () => {
                   {/* Same structure as shipping — NO LOGIC CHANGE */}
 
                   <div className="flex flex-col">
-                    {billingAddress.firstName && <label className="text-sm text-gray-500 mb-1">First Name</label>}
+                    {billingAddress.firstName && <label className="text-body2 text-gray-500 mb-1">First Name</label>}
                     <input
                       type="text"
                       placeholder="First Name *"
@@ -620,7 +615,7 @@ const Checkout = () => {
                   </div>
 
                   <div className="flex flex-col">
-                    {billingAddress.lastName && <label className="text-sm text-gray-500 mb-1">Last Name</label>}
+                    {billingAddress.lastName && <label className="text-body2 text-gray-500 mb-1">Last Name</label>}
                     <input
                       type="text"
                       placeholder="Last Name *"
@@ -631,7 +626,7 @@ const Checkout = () => {
                   </div>
 
                   <div className="col-span-2 flex flex-col">
-                    {billingAddress.phoneNumber && <label className="text-sm text-gray-500 mb-1">Phone Number</label>}
+                    {billingAddress.phoneNumber && <label className="text-body2 text-gray-500 mb-1">Phone Number</label>}
                     <input
                       type="text"
                       placeholder="Phone Number *"
@@ -642,7 +637,7 @@ const Checkout = () => {
                   </div>
 
                   <div className="col-span-2 flex flex-col">
-                    {billingAddress.company && <label className="text-sm text-gray-500 mb-1">Company</label>}
+                    {billingAddress.company && <label className="text-body2 text-gray-500 mb-1">Company</label>}
                     <input
                       type="text"
                       placeholder="Company (optional)"
@@ -653,7 +648,7 @@ const Checkout = () => {
                   </div>
 
                   <div className="col-span-2 flex flex-col">
-                    {billingAddress.street && <label className="text-sm text-gray-500 mb-1">Street Address</label>}
+                    {billingAddress.street && <label className="text-body2 text-gray-500 mb-1">Street Address</label>}
                     <input
                       type="text"
                       placeholder="Street Address *"
@@ -664,7 +659,7 @@ const Checkout = () => {
                   </div>
 
                   <div className="col-span-2 flex flex-col">
-                    {billingAddress.apartment && <label className="text-sm text-gray-500 mb-1">Apartment</label>}
+                    {billingAddress.apartment && <label className="text-body2 text-gray-500 mb-1">Apartment</label>}
                     <input
                       type="text"
                       placeholder="Apartment (optional)"
@@ -675,7 +670,7 @@ const Checkout = () => {
                   </div>
 
                   <div className="flex flex-col">
-                    {billingAddress.city && <label className="text-sm text-gray-500 mb-1">City</label>}
+                    {billingAddress.city && <label className="text-body2 text-gray-500 mb-1">City</label>}
                     <input
                       type="text"
                       placeholder="City *"
@@ -686,7 +681,7 @@ const Checkout = () => {
                   </div>
 
                   <div className="flex flex-col">
-                    {billingAddress.zipCode && <label className="text-sm text-gray-500 mb-1">Zip Code</label>}
+                    {billingAddress.zipCode && <label className="text-body2 text-gray-500 mb-1">Zip Code</label>}
                     <input
                       type="text"
                       placeholder="Zip Code *"
@@ -697,7 +692,7 @@ const Checkout = () => {
                   </div>
 
                   <div className="col-span-2 flex flex-col">
-                    {billingAddress.country && <label className="text-sm text-gray-500 mb-1">Country</label>}
+                    {billingAddress.country && <label className="text-body2 text-gray-500 mb-1">Country</label>}
                     <input
                       type="text"
                       placeholder="Country *"

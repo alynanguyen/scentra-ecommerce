@@ -42,34 +42,6 @@ const OrderList = () => {
           </Link>
         </div>
       ) : (
-        // <div className="space-y-4">
-        //   {orders.map((order) => (
-        //     <Link
-        //       key={order._id}
-        //       to={`/orders/${order._id}`}
-        //       className="block bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow"
-        //     >
-        //       <div className="flex items-center justify-between">
-        //         <div className="flex-1">
-        //           <div className="flex items-center space-x-4 mb-2">
-        //             <h3 className="text-lg font-semibold text-gray-900">
-        //               Order #{order.orderNumber}
-        //             </h3>
-        //             <StatusBadge status={order.orderStatus} size="sm" />
-        //           </div>
-        //           <p className="text-sm text-gray-500">
-        //             {new Date(order.createdAt).toLocaleDateString()} • {order.items.length} item(s)
-        //           </p>
-        //         </div>
-        //         <div className="text-right">
-        //           <p className="text-lg font-semibold text-gray-900">
-        //             ${order.totalPrice.toFixed(2)}
-        //           </p>
-        //         </div>
-        //       </div>
-        //     </Link>
-        //   ))}
-        // </div>
         <div className="flex flex-col gap-layout-lg">
           {orders.map((order) => (
             <Link

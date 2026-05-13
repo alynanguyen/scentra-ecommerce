@@ -18,7 +18,7 @@ const Alert = ({ type = 'info', message, className = '', onClose }) => {
   if (!message) return null;
 
   return (
-    <div className={`p-3 rounded-md text-sm ${typeStyles[type]} ${className}`}>
+    <div className={`p-3 rounded-md text-body2 ${typeStyles[type]} ${className}`}>
       <div className="flex items-center justify-between">
         <span>{message}</span>
         {onClose && (

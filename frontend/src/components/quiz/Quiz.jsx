@@ -309,7 +309,7 @@ const Quiz = () => {
     return (
       <div className="flex flex-col justify-center items-center min-h-screen">
         <div className="animate-spin rounded-full h-16 w-16 border-b-2 border-black mb-4"></div>
-        <h2 className="text-2xl font-bold text-gray-900 mb-2">Analyzing Your Preferences</h2>
+        <h2 className="text-heading2 font-bold text-gray-900 mb-2">Analyzing Your Preferences</h2>
         <p className="text-gray-600">We're calculating your perfect scent matches...</p>
       </div>
     );
@@ -495,7 +495,7 @@ const Quiz = () => {
             <div className="flex flex-col gap-layout-lg">
               {/* Question */}
               <div className="flex flex-col gap-layout-xxs">
-                <h2 className="text-body1 font-heading">{question.question}</h2>
+                <h2 className="text-heading3 font-heading">{question.question}</h2>
                 <p className="text-caption text-gray-500">
                   {isSingleSelect ? '(Choose 1 option that suits you best)' : '(Choose many options as needed)'}
                 </p>

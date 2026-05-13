@@ -354,7 +354,7 @@ const Header = () => {
                     <MaterialIcon icon="account_circle" size={24} />
                   </button>
                   {showUserMenu && (
-                    <div className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50 border border-gray-200">
+                    <div className="absolute right-0 mt-2 w-48 bg-white rounded-md py-1 z-50 border border-gray-200">
                       <Link
                         to="/account"
                         onClick={() => setShowUserMenu(false)}
