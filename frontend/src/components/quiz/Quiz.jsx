@@ -495,7 +495,7 @@ const Quiz = () => {
             <div className="flex flex-col gap-layout-lg">
               {/* Question */}
               <div className="flex flex-col gap-layout-xxs">
-                <h2 className="text-heading3 font-heading">{question.question}</h2>
+                <h2 className="text-heading3 font-heading font-medium">{question.question}</h2>
                 <p className="text-caption text-gray-500">
                   {isSingleSelect ? '(Choose 1 option that suits you best)' : '(Choose many options as needed)'}
                 </p>

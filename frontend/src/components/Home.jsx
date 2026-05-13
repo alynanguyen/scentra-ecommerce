@@ -184,7 +184,7 @@ const Home = () => {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-12 md:py-24 ">
           {/* Left side with text and buttons, right side with image */}
           <div className=" relative text-left max-w-[350px] md:max-w-[500px] flex flex-col gap-layout-lg z-10">
-            <h1 className="text-heading1 font-heading">
+            <h1 className="text-heading1 font-heading font-medium">
               Discover niche perfumes with up to 30% off
             </h1>
             <p className="text-caption">
@@ -278,7 +278,7 @@ const Home = () => {
               <div className="mt-2 mx-auto flex justify-center">
                 <Link
                   to="/products?availability=bestSeller"
-                  className=" flex items-center gap-1 w-fit md:hidden text-body2 text-white bg-black px-6 py-1 rounded-3xl hover:bg-gray-800 transition-colors font-light "
+                  className=" flex items-center gap-1 w-fit md:hidden text-body2 text-white bg-black px-6 py-1 rounded-3xl hover:bg-gray-800 transition-colors "
                 >
                   View All Best Sellers
                   <MaterialIcon icon="arrow_forward" size={24} className="ml-1" />
@@ -358,7 +358,7 @@ const Home = () => {
             <div className="mx-auto flex justify-center">
               <Link
                 to="/products?sort=newest"
-                className=" flex items-center gap-1 w-fit md:hidden text-body2 text-white bg-black px-6 py-1 rounded-3xl hover:bg-gray-800 transition-colors font-light"
+                className=" flex items-center gap-1 w-fit md:hidden text-body2 text-white bg-black px-6 py-1 rounded-3xl hover:bg-gray-800 transition-colors"
               >
                 View All New Arrivals
                 <MaterialIcon icon="arrow_forward" size={24} className="ml-1" />

@@ -446,7 +446,7 @@ const ProductDetail = () => {
           <div className="flex justify-between">
             <div className="flex flex-col gap-layout-normal">
               {/* Perfume Name */}
-              <h1 className="text-heading1 font-medium font-display">{product.name}</h1>
+              <h1 className="text-heading1 font-semibold font-display">{product.name}</h1>
 
               {/* Rating */}
               {product.reviews > 0 && (

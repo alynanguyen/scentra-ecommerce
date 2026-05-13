@@ -439,7 +439,7 @@ const Header = () => {
             className="absolute inset-y-0 left-0 w-80 bg-white shadow-xl overflow-y-auto"
           >
             <div className="sticky top-0 bg-white border-b border-black mx-2 px-4 py-4 flex items-center justify-between z-10">
-              <h2 className="text-heading2 font-heading">Menu</h2>
+              <h2 className="text-heading2 font-heading font-medium">Menu</h2>
               <button
                 onClick={() => setShowMobileMenu(false)}
                 className="p-2 text-black"
