@@ -37,12 +37,27 @@
 //   return `${baseUrl}/${cleanPath}`;
 // };
 
+// export const getImageUrl = (imagePath) => {
+//   if (!imagePath) return null;
+
+//   const baseUrl = import.meta.env.VITE_API_URL;
+
+//   return `${baseUrl}/${imagePath.replace(/^\/+/, "")}`;
+// };
+
 export const getImageUrl = (imagePath) => {
   if (!imagePath) return null;
 
+  let cleanPath = imagePath.replace(/^\/+/, "");
+
+  // FIX OLD DB FORMAT
+  if (cleanPath.startsWith("imgs/") && !cleanPath.startsWith("imgs/products/") && !cleanPath.startsWith("imgs/notes/")) {
+    cleanPath = cleanPath.replace("imgs/", "imgs/products/");
+  }
+
   const baseUrl = import.meta.env.VITE_API_URL;
 
-  return `${baseUrl}/${imagePath.replace(/^\/+/, "")}`;
+  return `${baseUrl}/${cleanPath}`;
 };
 
 // Generate an inline SVG data URI placeholder (works offline and avoids external calls)
