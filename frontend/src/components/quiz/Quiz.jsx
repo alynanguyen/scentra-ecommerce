@@ -330,7 +330,7 @@ const Quiz = () => {
             <p className="text-caption">
               Take our personalized quiz to discover fragrances that match your unique preferences and style.
             </p>
-            <img src=".././src/assets/imgs/quiz/perfume.png" alt="perfume" className="h-[50px] md:h-[70px]" />
+            <img src="/imgs/quiz/perfume.png" alt="perfume" className="h-[50px] md:h-[70px]" />
           </div>
 
           <div className="flex flex-col gap-layout-xl">

@@ -120,13 +120,13 @@ const Cart = () => {
       <div className="max-w-7xl flex justify-center my-pdp-gap-btw-sections">
         {/* Image of payment methods on mobile */}
         <img
-          src=".././src/assets/imgs/home/payment/payment_mobile.png"
+          src="/imgs/home/payment/payment_mobile.png"
           alt="Payment Methods"
           className="max-w-[300px] md:hidden"
         />
         {/* Image of payment methods on desktop */}
         <img
-          src=".././src/assets/imgs/home/payment/payment_desktop.png"
+          src="/imgs/home/payment/payment_desktop.png"
           alt="Payment Methods"
           className="hidden md:block max-w-[500px]"
         />

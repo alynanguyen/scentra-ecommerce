@@ -210,7 +210,7 @@ const Home = () => {
           {/* Image */}
           <div className="absolute left-[20%] top-[40%] md:top-1/2 -translate-y-[35%] pointer-events-none w-full">
             <img
-              src="../src/assets/imgs/home/hero_banner/hero_banner_image.png"
+              src="/imgs/home/hero_banner/hero_banner_image.png"
               alt="Hero"
               className="w-full mx-auto mt-12 md:mt-0"
             />
@@ -417,7 +417,7 @@ const Home = () => {
             </div>
 
             <div className="flex flex-col md:flex-row-reverse gap-4 items-center">
-              <img src=".././src/assets/imgs/home/quiz/quiz-img.png" alt="Quiz image" className="h-auto w-[350px] object-cover" />
+              <img src="/imgs/home/quiz/quiz-img.png" alt="Quiz image" className="h-auto w-[350px] object-cover" />
               <Link
                 to={isAuthenticated ? "/quiz" : "/login?redirect=/quiz"}
                 className="w-fit mt-layout-lg inline-flex md:hidden items-center px-5 py-2 bg-black text-white rounded-3xl hover:bg-gray-800 transition-colors text-body2"
@@ -546,13 +546,13 @@ const Home = () => {
       <div className="max-w-7xl flex justify-center mx-auto px-homepage-margin-x py-homepage-gap-btw-sections">
         {/* Image of payment methods on mobile */}
         <img
-          src=".././src/assets/imgs/home/payment/payment_mobile.png"
+          src="/imgs/home/payment/payment_mobile.png"
           alt="Payment Methods"
           className="max-w-[300px] md:hidden"
         />
         {/* Image of payment methods on desktop */}
         <img
-          src=".././src/assets/imgs/home/payment/payment_desktop.png"
+          src="/imgs/home/payment/payment_desktop.png"
           alt="Payment Methods"
           className="hidden md:block max-w-[500px]"
         />

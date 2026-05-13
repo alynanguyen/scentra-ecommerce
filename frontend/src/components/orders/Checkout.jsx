@@ -748,9 +748,9 @@ const Checkout = () => {
                     <div className="flex items-center gap-layout-normal">
                       <span className="text-body2">Card (VISA, Mastercard)</span>
                       <div className="flex items-center gap-layout-xs">
-                        <img src="../src/assets/imgs/checkout/payment_methods/visa.png" alt="Visa" className="h-6 md:h-8 object-contain" />
-                        <img src="../src/assets/imgs/checkout/payment_methods/mastercard.png" alt="Mastercard" className="h-6 md:h-8 object-contain" />
-                        <img src="../src/assets/imgs/checkout/payment_methods/amex.png" alt="Amex" className="h-10 md:h-12 object-contain" />
+                        <img src="/imgs/checkout/payment_methods/visa.png" alt="Visa" className="h-6 md:h-8 object-contain" />
+                        <img src="/imgs/checkout/payment_methods/mastercard.png" alt="Mastercard" className="h-6 md:h-8 object-contain" />
+                        <img src="/imgs/checkout/payment_methods/amex.png" alt="Amex" className="h-10 md:h-12 object-contain" />
                       </div>
                     </div>
                   </button>
@@ -796,7 +796,7 @@ const Checkout = () => {
                           <div className="absolute right-3 top-1/2 -translate-y-1/2 flex items-center gap-2">
 
                             <img
-                              src="../src/assets/imgs/checkout/payment_methods/visa.png"
+                              src="/imgs/checkout/payment_methods/visa.png"
                               alt="Visa"
                               className={`h-4 transition ${
                                 detectedCardType === 'visa'
@@ -808,7 +808,7 @@ const Checkout = () => {
                             />
 
                             <img
-                              src="../src/assets/imgs/checkout/payment_methods/mastercard.png"
+                              src="/imgs/checkout/payment_methods/mastercard.png"
                               alt="Mastercard"
                               className={`h-4 transition ${
                                 detectedCardType === 'mastercard'
@@ -820,7 +820,7 @@ const Checkout = () => {
                             />
 
                             <img
-                              src="../src/assets/imgs/checkout/payment_methods/amex.png"
+                              src="/imgs/checkout/payment_methods/amex.png"
                               alt="Amex"
                               className={`h-6 transition ${
                                 detectedCardType === 'amex'
@@ -873,10 +873,10 @@ const Checkout = () => {
 
                 {/* OTHER METHODS */}
                 {[
-                  { key: 'apple', label: 'Apple Pay', img: '../src/assets/imgs/checkout/payment_methods/applepay.png' },
-                  { key: 'google', label: 'Google Pay', img: '../src/assets/imgs/checkout/payment_methods/googlepay.png' },
-                  { key: 'paypal', label: 'PayPal', img: '../src/assets/imgs/checkout/payment_methods/paypal.png' },
-                  { key: 'klarna', label: 'Klarna', img: '../src/assets/imgs/checkout/payment_methods/klarna.png' },
+                  { key: 'apple', label: 'Apple Pay', img: '/imgs/checkout/payment_methods/applepay.png' },
+                  { key: 'google', label: 'Google Pay', img: '/imgs/checkout/payment_methods/googlepay.png' },
+                  { key: 'paypal', label: 'PayPal', img: '/imgs/checkout/payment_methods/paypal.png' },
+                  { key: 'klarna', label: 'Klarna', img: '/imgs/checkout/payment_methods/klarna.png' },
                 ].map((method) => (
                   <div key={method.key} className="py-layout-xs">
                     <button
@@ -1116,13 +1116,13 @@ const Checkout = () => {
       <div className="max-w-7xl flex justify-center">
         {/* Image of payment methods on mobile */}
         <img
-          src=".././src/assets/imgs/home/payment/payment_mobile.png"
+          src="/imgs/home/payment/payment_mobile.png"
           alt="Payment Methods"
           className="max-w-[300px] md:hidden"
         />
         {/* Image of payment methods on desktop */}
         <img
-          src=".././src/assets/imgs/home/payment/payment_desktop.png"
+          src="/imgs/home/payment/payment_desktop.png"
           alt="Payment Methods"
           className="hidden md:block max-w-[500px]"
         />
