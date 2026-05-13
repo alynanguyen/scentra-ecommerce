@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  @apply font-sans;
+}
+
+:root {
+  /* Mobile (default) */
+  /* FONT SIZE */
+  --font-number: 1.875rem;   /* 30px */
+  --font-heading1: 1.5rem;   /* 24px */
+  --font-heading2: 1.25rem;  /* 20px */
+  --font-heading3: 1.125rem; /* 18px */
+
+  --font-body1: 1rem;        /* 16px */
+  --font-body2: 0.875rem;    /* 14px */
+  --font-caption: 0.75rem;   /* 12px */
+  --font-overline: 0.625rem; /* 10px */
+
+  /* COMMON LAYOUT */
+  --layout-xxs: 0.25rem; /* 4px */
+  --layout-xs: 0.5rem;   /* 8px */
+  --layout-sm: 0.75rem;  /* 12px */
+  --layout-normal: 1rem; /* 16px */
+  --layout-lg: 1.25rem;  /* 20px */
+  --layout-xl: 1.5rem;   /* 24px */
+
+  --homepage-margin-x: 1.5rem; /* 24px */
+  --homepage-gap-btw-sections: 1.5rem; /* 24px */
+  --pdp-gap-btw-sections: 2.25rem; /* 36px */
+
+  --paragraph-line-height: 1.25rem; /* 20px */
+
+  /* BUTTON */
+  --button-padding-sm: 0.375rem 0.75rem; /* 6px 12px */
+  --button-padding-md: 0.5rem 1rem;      /* 8px 16px */
+  --button-padding-lg: 0.75rem 1.5rem;   /* 12px 24px */
+  --button-gap-sm: 0.25rem; /* 4px */
+  --button-gap-md: 0.375rem; /* 6px */
+  --button-gap-lg: 0.5rem; /* 8px */
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  :root {
+    /* FONT SIZE */
+    --font-number: 2.25rem;   /* 36px */
+    --font-heading1: 2.25rem;  /* 36px */
+    --font-heading2: 1.875rem; /* 30px */
+    --font-heading3: 1.5rem;   /* 24px */
+
+    --font-body1: 1.25rem;     /* 20px */
+    --font-body2: 1rem;        /* 16px */
+    --font-caption: 0.875rem;  /* 14px */
+    --font-overline: 0.75rem;  /* 12px */
+
+    /* COMMON LAYOUT */
+    --layout-xxs: 0.5rem;   /* 8px */
+    --layout-xs: 0.75rem;   /* 12px */
+    --layout-sm: 1rem;      /* 16px */
+    --layout-normal: 1.25rem; /* 20px */
+    --layout-lg: 1.5rem;    /* 24px */
+    --layout-xl: 1.75rem;   /* 28px */
+
+    --homepage-margin-x: 3rem; /* 48px */
+    --homepage-gap-btw-sections: 2.25rem; /* 36px */
+    --pdp-gap-btw-sections: 3rem; /* 48px */
+
+    --paragraph-line-height: 1.5rem; /* 24px */
+
+    /* BUTTON */
+    --button-padding-sm: 0.5rem 1rem;      /* 8px 16px */
+    --button-padding-md: 0.75rem 1.5rem;   /* 12px 24px */
+    --button-padding-lg: 1rem 1.75rem;     /* 16px 28px */
+    --button-gap-sm: 0.375rem; /* 6px */
+    --button-gap-md: 0.5rem; /* 8px */
+    --button-gap-lg: 0.75rem; /* 12px */
+  }
+}
+
+/* Material Symbols base styles */
+.material-symbols-outlined,
+.material-symbols-rounded {
+  font-family: 'Material Symbols Outlined', 'Material Symbols Rounded';
+  font-weight: 200;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+.material-symbols-rounded {
+  font-family: 'Material Symbols Rounded';
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+
+
+
