@@ -561,7 +561,7 @@ const ProductList = () => {
 
       {!activeBrand && (
         <div className="flex items-center justify-between mb-6">
-          <h1 className="text-heading1 font-display">
+          <h1 className="text-heading1 font-display font-semibold">
             {activeGender ? `${activeGender} Perfumes` : 'All Perfumes'}
           </h1>
           {/* Mobile Filter Button */}
