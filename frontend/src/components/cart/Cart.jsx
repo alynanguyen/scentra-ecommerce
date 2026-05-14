@@ -78,9 +78,9 @@ const Cart = () => {
         </div>
 
         {/* Order Summary Section */}
-        <div className="w-full lg:w-1/3 border flex flex-col p-layout-normal gap-layout-lg">
-            <h2 className="text-body1 font-display">Order Summary</h2>
-            <div className="border-t" />
+        <div className="w-full lg:w-1/3 border border-gray-500 flex flex-col p-layout-normal gap-layout-lg">
+            <h2 className="text-body1 font-display font-semibold">Order Summary</h2>
+            <div className="border-t border-gray-500" />
             <div className="space-y-2">
               <div className="flex justify-between text-caption">
                 <span>Items ({cartItemCount})</span>

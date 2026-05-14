@@ -344,6 +344,25 @@ const AccountSettingsTab = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-layout-lg">
 
+            {/* STREET */}
+            <div className=" flex flex-col gap-layout-xs">
+              <label className="text-body2">
+                Street Address
+              </label>
+
+              <input
+                type="text"
+                name="address.street"
+                value={formData.address.street}
+                onChange={handleChange}
+                disabled={!isEditing}
+                className={`w-full text-body2 bg-transparent outline-none transition ${
+                  isEditing
+                    ? 'py-2 border-b border-gray-300 focus:border-black'
+                    : 'font-medium'
+                }`}
+              />
+            </div>
 
             {/* APARTMENT */}
             <div className="flex flex-col gap-layout-xs">
@@ -365,16 +384,16 @@ const AccountSettingsTab = () => {
               />
             </div>
 
-            {/* STREET */}
-            <div className=" flex flex-col gap-layout-xs">
+            {/* CITY */}
+            <div className="flex flex-col gap-layout-xs">
               <label className="text-body2">
-                Street Address
+                City
               </label>
 
               <input
                 type="text"
-                name="address.street"
-                value={formData.address.street}
+                name="address.city"
+                value={formData.address.city}
                 onChange={handleChange}
                 disabled={!isEditing}
                 className={`w-full text-body2 bg-transparent outline-none transition ${
@@ -384,6 +403,7 @@ const AccountSettingsTab = () => {
                 }`}
               />
             </div>
+
 
             {/* ZIP */}
             <div className="flex flex-col gap-layout-xs">
@@ -395,26 +415,6 @@ const AccountSettingsTab = () => {
                 type="text"
                 name="address.zipCode"
                 value={formData.address.zipCode}
-                onChange={handleChange}
-                disabled={!isEditing}
-                className={`w-full text-body2 bg-transparent outline-none transition ${
-                  isEditing
-                    ? 'py-2 border-b border-gray-300 focus:border-black'
-                    : 'font-medium'
-                }`}
-              />
-            </div>
-
-            {/* CITY */}
-            <div className="flex flex-col gap-layout-xs">
-              <label className="text-body2">
-                City
-              </label>
-
-              <input
-                type="text"
-                name="address.city"
-                value={formData.address.city}
                 onChange={handleChange}
                 disabled={!isEditing}
                 className={`w-full text-body2 bg-transparent outline-none transition ${

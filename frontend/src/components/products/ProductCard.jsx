@@ -124,7 +124,7 @@ const ProductCard = ({ product }) => {
                 {displayOriginalPrice}
               </p>
             )}
-            <p className={`text-body1 font-heading font-semibold ${minPrice > 0 ? (isOnSale ? 'text-red' : 'text-black') : 'text-gray-400'}`}>
+            <p className={`text-heading3 font-heading font-bold ${minPrice > 0 ? (isOnSale ? 'text-red' : 'text-black') : 'text-gray-400'}`}>
               {displayPrice}
             </p>
           </div>

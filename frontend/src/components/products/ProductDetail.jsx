@@ -959,13 +959,13 @@ const ProductDetail = () => {
                 <ul className="space-y-2 text-body2 pl-2">
                   <li className="flex items-center gap-2">
                     <span className="w-1 h-1 rounded-full bg-black"></span>
-                    <span>Free shipping on orders over €100</span>
+                    <span>Free shipping on orders over €90</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="w-1 h-1 rounded-full bg-black"></span>
                     <span>Standard shipping: 3-5 business days</span>
                   </li>
-                  <li className="flex items-center gap-2">
+                  <li className="flex items-start sm:items-center gap-2">
                     <span className="w-1 h-1 rounded-full bg-black"></span>
                     <span>Express shipping: 1-2 business days (additional fee)</span>
                   </li>
@@ -987,7 +987,7 @@ const ProductDetail = () => {
                     <span className="w-1 h-1 rounded-full bg-black"></span>
                     <span>Items must be in original packaging</span>
                   </li>
-                  <li className="flex items-center gap-2">
+                  <li className="flex items-start sm:items-center gap-2">
                     <span className="w-1 h-1 rounded-full bg-black"></span>
                     <span>Return shipping costs are the responsibility of the customer</span>
                   </li>

@@ -234,35 +234,18 @@ const OrderDetail = () => {
           {/* REVIEW SECTION (DELIVERED ONLY) */}
           {/* ========================= */}
           {order.orderStatus === 'delivered' && (
-            <div className="p-layout-normal border flex flex-col gap-layout-lg">
-              <div className="text-body1 font-semibold font-display pb-layout-sm border-b">Review Items</div>
+            <div className="p-layout-normal border border-gray-500 flex flex-col gap-layout-lg">
+              <div className="text-body1 font-semibold font-display pb-layout-sm border-b border-gray-500">Review Items</div>
 
               <div className="flex flex-col gap-6">
-                {/* {Object.values(groupedItems).map((group) => (
-                  <div key={group.productId} className="border-b pb-layout-normal last:border-0">
 
-                    <p className="text-body2 font-medium mb-2">
-                      {group.productName}
-                    </p>
-
-
-                    <ReviewForm
-                      productId={group.productId}
-                      orderId={id}
-                      productName={group.productName}
-                      existingReview={productReviews[group.productId]}
-                      onReviewSubmitted={handleReviewSubmitted}
-                      onReviewUpdated={handleReviewUpdated}
-                    />
-                  </div>
-                ))} */}
                 {Object.values(groupedItems).map((group) => {
                   const imageUrl = getImageUrl(group.productImagePath);
 
                   return (
                     <div
                       key={group.productId}
-                      className="border-b pb-layout-xl last:border-0 flex flex-col gap-layout-sm"
+                      className="border-b border-gray-500 pb-layout-xl last:border-0 flex flex-col gap-layout-sm"
                     >
 
                       {/* Product Header */}
@@ -335,51 +318,10 @@ const OrderDetail = () => {
           {/* ========================= */}
           {/* ORDER SUMMARY (WITH ITEMS) */}
           {/* ========================= */}
-          <div className="border flex flex-col gap-layout-lg p-layout-normal">
-            <div className="text-body1 font-display font-semibold pb-layout-sm border-b">Order Summary</div>
+          <div className="border border-gray-500 flex flex-col gap-layout-lg p-layout-normal">
+            <div className="text-body1 font-display font-semibold pb-layout-sm border-b border-gray-500">Order Summary</div>
 
             {/* ITEMS */}
-            {/* <div className="flex flex-col gap-layout-normal">
-              {Object.values(groupedItems).map((group) => {
-                const imageUrl = getImageUrl(group.productImagePath);
-                const totalPrice = group.items.reduce(
-                  (sum, item) => sum + item.price * item.quantity,
-                  0
-                );
-
-                return (
-                  <div key={group.productId} className="border flex gap-layput-sm items-center border-b pb-4 last:border-0">
-
-
-                    <div className="w-[40px] h-[40px] md:w-[60px] md:h-[60px] flex-shrink-0">
-                      <img
-                        src={imageUrl}
-                        alt={group.productName}
-                        className="w-full h-full object-contain"
-                      />
-                    </div>
-
-
-                    <div className="flex-1">
-                      <p className="text-body2 font-medium">
-                        {group.productName}
-                      </p>
-
-                      {group.items.map((item, i) => (
-                        <p key={i} className="text-caption text-gray-500">
-                          {item.volume ? `${item.volume}ml` : 'Standard'} • Quantity: {item.quantity}
-                        </p>
-                      ))}
-                    </div>
-
-
-                    <div className="text-body2 font-semibold">
-                      €{totalPrice.toFixed(2)}
-                    </div>
-                  </div>
-                );
-              })}
-            </div> */}
 
             <div className="flex flex-col gap-layout-normal">
               {Object.values(groupedItems).map((group) => {
@@ -391,7 +333,7 @@ const OrderDetail = () => {
                   return (
                     <div
                       key={`${group.productId}-${item.volume}-${i}`}
-                      className="flex items-center gap-layout-sm border-b pb-4 last:border-0 last:pb-0"
+                      className="flex items-center gap-layout-sm border-b border-gray-500 pb-4 last:border-0 last:pb-0"
                     >
 
                       {/* IMAGE */}
@@ -426,7 +368,7 @@ const OrderDetail = () => {
             </div>
 
             {/* TOTAL */}
-            <div className="border-t pt-4 flex flex-col gap-layout-xs">
+            <div className="border-t border-gray-500 pt-4 flex flex-col gap-layout-xs">
               <div className="flex justify-between text-caption">
                 <span>Subtotal</span>
                 <span>€{order.totalPrice.toFixed(2)}</span>
@@ -436,14 +378,14 @@ const OrderDetail = () => {
                 <span>Free</span>
               </div>
 
-              <div className="flex justify-between text-body2 font-semibold mt-2 pt-6 border-t">
+              <div className="flex justify-between text-body2 font-semibold mt-2 pt-6 border-t border-gray-500">
                 <span>Total</span>
                 <span>€{order.totalPrice.toFixed(2)}</span>
               </div>
             </div>
 
             {/* PAYMENT */}
-            <div className="border-t pt-4">
+            <div className="border-t border-gray-500 pt-4">
               <p className="text-caption text-gray-500">
                 {/* Payment: {order.paymentInfo.method} */}
                 Payment: Card
@@ -460,8 +402,8 @@ const OrderDetail = () => {
           {/* ========================= */}
           {/* DELIVERY INFO */}
           {/* ========================= */}
-          <div className="border p-layout-normal flex flex-col gap-layout-lg">
-            <div className="text-body1 font-display font-semibold pb-layout-sm border-b">Delivery Information</div>
+          <div className="border border-gray-500 p-layout-normal flex flex-col gap-layout-lg">
+            <div className="text-body1 font-display font-semibold pb-layout-sm border-b border-gray-500">Delivery Information</div>
 
             <div className="text-body2 flex gap-layout-normal">
               <div className="flex flex-col gap-layout-normal">
@@ -490,46 +432,9 @@ const OrderDetail = () => {
           {/* ========================= */}
           {/* TRACKING */}
           {/* ========================= */}
-          <div className="border p-layout-normal flex flex-col gap-layout-lg">
-            <h2 className="text-body1 font-display font-semibold pb-layout-sm border-b">Tracking History</h2>
+          <div className="border border-gray-500 p-layout-normal flex flex-col gap-layout-lg">
+            <h2 className="text-body1 font-display font-semibold pb-layout-sm border-b border-gray-500">Tracking History</h2>
 
-            {/* <div className="flex flex-col">
-
-              {[
-                { key: 'placed', label: 'Order Placed', description: '' },
-                { key: 'processing', label: 'Processing' },
-                { key: 'shipped', label: 'Shipped' },
-                { key: 'delivered', label: 'Delivered' },
-              ].map((step, index) => {
-                const isPassed = getTrackingStep(order.orderStatus) >= index;
-
-                return (
-                  <div key={step.key} className="flex items-start gap-4">
-
-                    DOT + LINE
-                    <div className="flex flex-col items-center">
-                      <div
-                        className={`w-3 h-3 rounded-full ${
-                          isPassed ? 'bg-black' : 'bg-gray-300'
-                        }`}
-                      />
-                      {index !== 3 && (
-                        <div className={` w-[2px] h-10 ${isPassed ? 'bg-black' : 'bg-gray-300'}`} />
-                      )}
-                    </div>
-
-                    TEXT
-                    <div>
-                      <p className={`text-body2 ${isPassed ? 'text-black' : 'text-gray-400'}`}>
-                        {step.label}
-                      </p>
-                    </div>
-
-                  </div>
-                );
-              })}
-
-            </div> */}
             <div className="flex flex-col">
               {[
                 {
@@ -668,7 +573,7 @@ const OrderDetail = () => {
 
             {/* TRACKING NUMBER */}
             {order.trackingNumber && (
-              <div className="mt-6 border-t pt-4">
+              <div className="mt-6 border-t border-gray-500 pt-4">
                 <p className="text-caption text-gray-500">Tracking Number</p>
                 <p className="text-body2">{order.trackingNumber}</p>
               </div>

@@ -959,7 +959,7 @@ const Checkout = () => {
 
         {/* Order Summary */}
         <div className="lg:min-w-[360px]">
-          <div className="border border-gray-300 p-layout-normal flex flex-col gap-layout-lg sticky top-4">
+          <div className="border border-gray-500 p-layout-normal flex flex-col gap-layout-lg sticky top-4">
             <div className="border-b-[0.5px] border-gray-500 text-body1 font-semibold font-display pb-layout-sm">Order Summary</div>
             <div>
               {cart.items.map((item) => {
