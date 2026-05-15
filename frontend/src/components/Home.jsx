@@ -184,8 +184,8 @@ const Home = () => {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-12 md:py-24 ">
           {/* Left side with text and buttons, right side with image */}
           <div className=" relative text-left max-w-[350px] md:max-w-[500px] flex flex-col gap-layout-lg z-10">
-            <h1 className="text-heading1 font-heading font-bold">
-              Discover niche perfumes with up to 30% off
+            <h1 className="text-heading1 font-heading font-medium">
+              Uncover Niche Scents. Save Up to 30%.
             </h1>
             <p className="text-body2 max-w-[320px] md:max-w-[500px]">
               Free shipping on orders over €90
