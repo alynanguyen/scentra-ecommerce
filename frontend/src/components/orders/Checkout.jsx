@@ -147,6 +147,15 @@ const Checkout = () => {
   };
 
   const validateShippingAddress = () => {
+    if (!shippingAddress.firstName.trim()) {
+      return 'Please enter first name';
+    }
+    if (!shippingAddress.lastName.trim()) {
+      return 'Please enter last name';
+    }
+    if (!shippingAddress.phoneNumber.trim()) {
+      return 'Please enter phone number';
+    }
     if (!shippingAddress.street.trim()) {
       return 'Please enter street address';
     }
@@ -1089,7 +1098,7 @@ const Checkout = () => {
             )}
 
             {currentStep === 2 && !couponApplied && (
-              <div className="mb-4 p-3 bg-yellow-50 rounded-lg">
+              <div className="mb-4 p-3 bg-yellow rounded-lg">
                 <p className="text-body2 text-white">
                   <strong>Required:</strong> Please apply the "FREE" coupon code to continue.
                 </p>
