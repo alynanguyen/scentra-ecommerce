@@ -1099,7 +1099,7 @@ const Checkout = () => {
 
             {currentStep === 2 && !couponApplied && (
               <div className="mb-4 p-3 bg-yellow rounded-lg">
-                <p className="text-body2 text-white">
+                <p className="text-body2 text-gray-800">
                   <strong>Required:</strong> Please apply the "FREE" coupon code to continue.
                 </p>
               </div>
