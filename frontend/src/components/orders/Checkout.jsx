@@ -978,7 +978,7 @@ const Checkout = () => {
                 const itemVolume = item.volume || 0;
                 const imageUrl = getImageUrl(item.product?.image_path);
                 return (
-                  <div key={item._id || item.product?._id} className="flex items-center gap-layout-sm mb-layout-sm">
+                  <div key={item._id || item.product?._id} className="flex items-center gap-layout-sm mb-layout-normal last:mb-0">
                     {/* Product Image */}
                     <div className="flex-shrink-0 w-[40px] h-[40px] md:w-[60px] md:h-[60px] overflow-hidden flex items-center justify-center p-1">
                       {imageUrl ? (
