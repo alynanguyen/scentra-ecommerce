@@ -479,8 +479,8 @@ const ProductDetail = () => {
 
             {suitabilityScore && (
               <div className="flex flex-col items-center gap-layout-xs">
-                <div className="px-3 py-1 bg-linencloud rounded-full">
-                  <p className="text-caption text-gray-800">Match score</p>
+                <div className="flex items-center justify-center px-3 py-1 bg-linencloud rounded-full">
+                  <p className="text-caption text-gray-800 text-center">Match score</p>
                 </div>
                 <p className="text-number font-bold font-display">{suitabilityScore}</p>
               </div>
