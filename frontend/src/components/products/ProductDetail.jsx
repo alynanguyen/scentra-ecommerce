@@ -573,7 +573,7 @@ const ProductDetail = () => {
           <div className="pt-6">
             {product.stock === 0 ? (
               <>
-                <p className="text-heading2 font-medium mb-4">Out of Stock</p>
+                <p className="text-heading2 font-medium mb-4 text-gray-600">Out of Stock</p>
                 {message && (
                   <div className={`mb-4 p-3 rounded-md ${message.includes('success') || message.includes('notified') || message.includes('Unsubscribed') ? 'bg-success-bg text-success-text' : 'bg-error-bg text-error-text'}`}>
                     {message}
@@ -599,7 +599,7 @@ const ProductDetail = () => {
                       max={product.stock}
                       className="border rounded-full text-center py-1 px-3 gap-2"
                     />
-                    <span className=" text-caption">
+                    <span className={`text-caption ${product.stock <= 4 ? 'text-red' : ''}`}>
                       {product.stock > 4 ? 'In stock' : `Only ${product.stock} left`}
                     </span>
                   </div>
